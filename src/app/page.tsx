@@ -65,6 +65,12 @@ export default function HomePage() {
             <p className="mt-6 max-w-[560px] text-xl text-[#abb2bf]">
               He builds Telegram bots, web apps, and AI automations for real-world tasks
             </p>
+            <div className="mt-6 max-w-[420px] border border-[#c778dd] bg-[#2c313a] px-4 py-3">
+              <p className="text-sm text-[#abb2bf]">Public counter</p>
+              <p className="mt-1 text-lg text-white">
+                Total site visits: <span className="accent"><VisitCounter mode="inline" /></span>
+              </p>
+            </div>
             <Link
               href={socialLinks.telegram}
               target="_blank"
@@ -90,9 +96,6 @@ export default function HomePage() {
             <div className="absolute bottom-5 left-5 z-20 flex w-[320px] items-center gap-3 border border-[#abb2bf] bg-[#282c33] px-3 py-2 text-base text-[#abb2bf] md:w-[355px]">
               <span className="h-4 w-4 bg-[#c778dd]" />
               <span>Currently working on Portfolio</span>
-              <span className="ml-auto text-white">
-                <VisitCounter mode="inline" />
-              </span>
             </div>
           </div>
         </section>
