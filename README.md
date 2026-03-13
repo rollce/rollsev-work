@@ -8,7 +8,7 @@ Dark portfolio website for Denis Mitrofanov.
 - Projects catalog (8 deployed products)
 - Stack and capabilities pages
 - Social links (Telegram, GitHub)
-- Total hits counter via CountAPI
+- Total hits counter persisted in Railway Redis
 
 ## Routes
 
@@ -26,4 +26,4 @@ npm run dev
 
 ## Environment
 
-Copy `.env.example` to `.env.local` if you want custom counter keys.
+Copy `.env.example` to `.env.local` and set Redis credentials if needed.
