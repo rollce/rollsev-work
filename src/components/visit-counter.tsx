@@ -7,7 +7,11 @@ type CounterState = {
   loading: boolean;
 };
 
-export function VisitCounter() {
+type VisitCounterProps = {
+  mode?: "card" | "inline";
+};
+
+export function VisitCounter({ mode = "card" }: VisitCounterProps) {
   const hasTracked = useRef(false);
   const [state, setState] = useState<CounterState>({ count: null, loading: true });
 
@@ -45,12 +49,16 @@ export function VisitCounter() {
     };
   }, []);
 
+  const value = state.loading ? "..." : state.count?.toLocaleString() ?? "N/A";
+
+  if (mode === "inline") {
+    return <span>{value}</span>;
+  }
+
   return (
     <div className="rounded-2xl border border-zinc-800 bg-zinc-900/70 p-4 backdrop-blur">
       <p className="text-xs uppercase tracking-[0.22em] text-zinc-500">Total hits</p>
-      <p className="mt-2 font-[family-name:var(--font-heading)] text-3xl text-zinc-50">
-        {state.loading ? "..." : state.count?.toLocaleString() ?? "N/A"}
-      </p>
+      <p className="mt-2 font-[family-name:var(--font-heading)] text-3xl text-zinc-50">{value}</p>
     </div>
   );
 }
