@@ -8,14 +8,14 @@ Dark portfolio website for Denis Mitrofanov.
 - Projects catalog (8 deployed products)
 - Stack and capabilities pages
 - Social links (Telegram, GitHub)
-- Total hits counter persisted in Railway Redis
+- Public unique visitors counter persisted in Railway Redis
 
 ## Routes
 
 - `/` Home
 - `/projects` Live projects
 - `/stack` Skills and stack
-- `/api/hits` Hit counter endpoint
+- `/api/hits` Unique visitors counter endpoint
 
 ## Local run
 

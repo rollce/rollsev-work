@@ -66,9 +66,9 @@ export default function HomePage() {
               He builds Telegram bots, web apps, and AI automations for real-world tasks
             </p>
             <div className="mt-6 max-w-[420px] border border-[#c778dd] bg-[#2c313a] px-4 py-3">
-              <p className="text-sm text-[#abb2bf]">Public counter</p>
+              <p className="text-sm text-[#abb2bf]">Public unique counter</p>
               <p className="mt-1 text-lg text-white">
-                Total site visits: <span className="accent"><VisitCounter mode="inline" /></span>
+                Unique visitors: <span className="accent"><VisitCounter mode="inline" /></span>
               </p>
             </div>
             <Link
