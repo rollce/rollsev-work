@@ -59,11 +59,11 @@ export default function HomePage() {
         <section id="home" className="mt-14 grid items-center gap-10 lg:grid-cols-[1.08fr_0.92fr]">
           <div>
             <h1 className="max-w-[620px] text-[2.3rem] font-semibold leading-[1.28] text-white md:text-[2.95rem]">
-              Denis (rollsev) is a <span className="accent">web designer</span> and{" "}
-              <span className="accent">front-end developer</span>
+              Denis (rollsev) is a <span className="accent">backend engineer</span> and{" "}
+              <span className="accent">automation developer</span>
             </h1>
             <p className="mt-6 max-w-[560px] text-xl text-[#abb2bf]">
-              He crafts responsive websites where technologies meet creativity
+              He builds Telegram bots, web apps, and AI automations for real-world tasks
             </p>
             <Link
               href={socialLinks.telegram}
@@ -160,10 +160,10 @@ export default function HomePage() {
               <p className="text-lg leading-8 text-[#abb2bf]">
                 Hello, I&apos;m Denis (rollsev)!
                 <br />
-                I&apos;m a fullstack product engineer based in Moscow, focused on building practical web systems with a
-                strong visual identity.
+                I&apos;m a backend engineer based in Moscow, focused on Telegram bots, web applications, and AI-powered
+                automations.
                 <br />
-                <br />I can transform raw ideas into clear interfaces and stable production-ready applications.
+                <br />I transform raw ideas into reliable production systems that solve real user workflows.
               </p>
               <Link
                 href={socialLinks.github}
@@ -225,7 +225,7 @@ export default function HomePage() {
                 </span>
                 <span className="font-semibold">Denis (rollsev)</span>
               </div>
-              <p className="mt-2 text-sm text-[#abb2bf]">Web designer and front-end developer</p>
+              <p className="mt-2 text-sm text-[#abb2bf]">Backend engineer, Telegram bot and AI automation developer</p>
             </div>
 
             <div className="text-sm">

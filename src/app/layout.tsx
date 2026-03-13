@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     default: "Denis (rollsev) | Portfolio",
     template: "%s | rollsev.work",
   },
-  description: "Portfolio website for Denis (rollsev).",
+  description: "Backend engineer creating Telegram bots, web apps, and AI automations.",
   openGraph: {
     title: "Denis (rollsev) | Portfolio",
-    description: "Portfolio website for Denis (rollsev).",
+    description: "Backend engineer creating Telegram bots, web apps, and AI automations.",
     url: "https://rollsev.work",
     siteName: "rollsev.work",
     type: "website",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Denis (rollsev) | Portfolio",
-    description: "Portfolio website for Denis (rollsev).",
+    description: "Backend engineer creating Telegram bots, web apps, and AI automations.",
   },
 };
 
