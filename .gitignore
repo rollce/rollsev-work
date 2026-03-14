@@ -13,9 +13,10 @@
 # testing
 /coverage
 
-# next.js
+# vite
+/dist/
+/vite.svg
 /.next/
-/out/
 
 # production
 /build

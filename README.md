@@ -1,29 +1,26 @@
-# rollsev.work
+# rollsev.work (Lite)
 
-Dark portfolio website for Denis Mitrofanov.
+Portfolio site migrated from Next.js to `Lit + Vite` to reduce runtime overhead.
 
-## Features
+## Stack
 
-- Large animated landing sections
-- Projects catalog (8 deployed products)
-- Stack and capabilities pages
-- Social links (Telegram, GitHub)
-- Public unique visitors counter persisted in Railway Redis
+- Lit 3
+- Vite 7
+- TypeScript 5
+- Docker (BusyBox static runtime)
 
-## Routes
-
-- `/` Home
-- `/projects` Live projects
-- `/stack` Skills and stack
-- `/api/hits` Unique visitors counter endpoint
-
-## Local run
+## Scripts
 
 ```bash
 npm install
 npm run dev
+npm run build
+npm run preview
+npm run check
 ```
 
-## Environment
+## Notes
 
-Copy `.env.example` to `.env.local` and set Redis credentials if needed.
+- Main page is now a lightweight client-rendered Lit component.
+- Public visitor counter uses `countapi.xyz` and increments once per browser via localStorage.
+- If the counter provider is unavailable, the UI falls back to `N/A` without breaking.
